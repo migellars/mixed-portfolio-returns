@@ -3,12 +3,11 @@ const config = require("config");
 const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
-const { adminAuth } = require("../middleware/auth");
 const response = require("../services/response");
 const _ = require("lodash");
 const { Version, validateAppVersionPost } = require("../models/appVersion");
 
-router.post("/", adminAuth, async (req, res) => {
+router.post("/",  async (req, res) => {
     const { error } = validateAppVersionPost(req.body);
     if (error) return response.validationErrors(error.details);
 
@@ -147,7 +146,7 @@ router.get("/check", async (req, res) => {
     return res.send({ statusCode: 200, message: "Success", data: respObj });
 });
 
-router.get("/list", adminAuth, async (req, res) => {
+router.get("/list",  async (req, res) => {
     let versionList = await Version.find({});
     return res.send({ statusCode: 200, message: "Success", data: { versionList } });
 });

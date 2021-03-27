@@ -4,6 +4,7 @@
   "description": "Mixed Porfolio Returns",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "jest"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "nodemon": "^2.0.7",
     "socket.io": "^2.2.0",
     "swagger": "^0.0.1",
+    "swagger-ui-express": "^4.1.6",
     "winston": "^2.4.0",
     "winston-mongodb": "^5.0.7"
   },
