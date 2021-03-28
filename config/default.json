@@ -1,4 +1,6 @@
 {
     "port": 8000,
-    "environment": "development"
+    "environment": "development",
+    "TOKEN_SECRET":"09f26e402586e2faa8da4c98a35f1b20d6b033c60Startedfromthebottomnowwearehere.",
+"USER_PORTFOLIO_LINK":"https://manator-api-br-rn-challenge.herokuapp.com/sample-user-portfolio.json"
 }

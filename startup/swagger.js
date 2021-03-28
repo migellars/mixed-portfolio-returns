@@ -6,9 +6,8 @@ const swaggerDocument = {
         description: 'your description here',
         termsOfService: '',
         contact: {
-            name: 'Tran Son hoang',
-            email: 'son.hoang01@gmail.com',
-            url: 'https://hoangtran.co'
+            name: 'Migel Alex',
+            email: 'devmigel@gmail.com'
         },
         license: {
             name: 'Apache 2.0',
@@ -16,4 +15,4 @@ const swaggerDocument = {
         }
     }
 }
-exports.swaggerDocument = swaggerDocument;
+module.exports.swaggerDocument = swaggerDocument;
