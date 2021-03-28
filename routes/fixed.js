@@ -16,7 +16,7 @@ const getUserPortfolio = async () => {
     }
   }
 
-router.get("/check", async (req, res) => {
+router.get("/userdata", async (req, res) => {
     var data = await getUserPortfolio();
     console.log(data);
     return response.withData(res, data.data);
